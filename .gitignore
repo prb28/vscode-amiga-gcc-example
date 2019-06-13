@@ -1,0 +1,5 @@
+build*
+fs-uae/hd0/hello
+.DS_Store
+bin/*
+.vscode/ipch

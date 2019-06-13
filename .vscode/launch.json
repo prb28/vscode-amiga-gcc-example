@@ -1,0 +1,52 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Connect to gdbserver",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/fs-uae/hd0/hello",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "miDebuggerServerAddress": "localhost:2345",
+            "environment": [],
+            "externalConsole": false,
+            "osx": {
+                "MIMode": "gdb",
+                "miDebuggerPath": "/opt/amiga-gcc/bin/m68k-amigaos-gdb"
+            },
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "type": "fs-uae-run",
+            "request": "launch",
+            "name": "Run",
+            "buildWorkspace": true,
+            "windows": {
+                "emulator": "${workspaceFolder}/bin/fs-uae.exe",
+            },
+            "osx": {
+                "emulator": "${workspaceFolder}/bin/fs-uae",
+            },
+            "linux": {
+                "emulator": "${workspaceFolder}/bin/fs-uae",
+            },
+            "emulatorWorkingDir": "${workspaceFolder}/bin",
+            "options": [
+                "--chip_memory=1024",
+                "--hard_drive_0=${workspaceFolder}/fs-uae/hd0",
+                "--joystick_port_1=none",
+                "--amiga_model=A1200",
+                "--slow_memory=1792",
+                "--bsdsocket-library=1"
+            ]
+        }
+    ]
+}
