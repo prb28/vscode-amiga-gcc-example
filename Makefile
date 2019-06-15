@@ -1,4 +1,4 @@
-AMIGA_GCC_ROOT=/Users/papa/dev/amiga/compilation/amiga-gcc
+AMIGA_GCC_ROOT=./amiga-gcc
 AMIGA_GCC_BIN=$(AMIGA_GCC_ROOT)/bin
 CC=$(AMIGA_GCC_BIN)/m68k-amigaos-gcc
 LDFLAGS=

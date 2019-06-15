@@ -3,10 +3,12 @@
         {
             "name": "Amiga",
             "includePath": [
-                "/opt/amiga-gcc/**"
+                "${workspaceFolder}/amiga-gcc/**"
             ],
-            "defines": [],
-            "compilerPath": "/opt/amiga-gcc/bin/m68k-amigaos-gcc",
+            "defines": [
+                "_NO_INLINE"
+            ],
+            "compilerPath": "${workspaceFolder}/amiga-gcc/bin/m68k-amigaos-gcc",
             "cStandard": "c11",
             "cppStandard": "c++17",
             "intelliSenseMode": "gcc-x64"

@@ -29,14 +29,9 @@
             "request": "launch",
             "name": "Run",
             "buildWorkspace": true,
+            "emulator": "${workspaceFolder}/bin/fs-uae",
             "windows": {
                 "emulator": "${workspaceFolder}/bin/fs-uae.exe",
-            },
-            "osx": {
-                "emulator": "${workspaceFolder}/bin/fs-uae",
-            },
-            "linux": {
-                "emulator": "${workspaceFolder}/bin/fs-uae",
             },
             "emulatorWorkingDir": "${workspaceFolder}/bin",
             "options": [
@@ -46,7 +41,8 @@
                 "--amiga_model=A1200",
                 "--slow_memory=1792",
                 "--bsdsocket-library=1"
-            ]
+            ],
+            "preLaunchTask": "Build"
         }
     ]
 }

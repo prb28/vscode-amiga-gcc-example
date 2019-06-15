@@ -1,0 +1,11 @@
+{
+    "amiga-assembly.vasm": {
+        "enabled": false,
+        "file": "${workspaceFolder}/amiga-gcc/bin/vasmm68k_mot",
+        "options": [
+            "-m68000",
+            "-Fhunk",
+            "-linedebug"
+        ]
+    }
+}
