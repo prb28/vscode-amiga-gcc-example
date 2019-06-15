@@ -2,7 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(gdb) Connect to gdbserver",
+            "name": "Debug",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/fs-uae/hd0/hello",
@@ -14,7 +14,7 @@
             "externalConsole": false,
             "osx": {
                 "MIMode": "gdb",
-                "miDebuggerPath": "/opt/amiga-gcc/bin/m68k-amigaos-gdb"
+                "miDebuggerPath": "${workspaceFolder}/amiga-gcc/bin/m68k-amigaos-gdb"
             },
             "setupCommands": [
                 {
@@ -40,6 +40,7 @@
                 "--joystick_port_1=none",
                 "--amiga_model=A1200",
                 "--slow_memory=1792",
+                "--automatic_input_grab=0",
                 "--bsdsocket-library=1"
             ],
             "preLaunchTask": "Build"
