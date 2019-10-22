@@ -16,6 +16,13 @@
                 "MIMode": "gdb",
                 "miDebuggerPath": "${workspaceFolder}/amiga-gcc/bin/m68k-amigaos-gdb"
             },
+            "windows": {
+                "MIMode": "gdb",
+                "miDebuggerPath": "${workspaceFolder}/amiga-gcc/bin/m68k-amigaos-gdb.exe",
+                "sourceFileMap": {
+                    "/": "${workspaceFolder}"
+                },
+            },
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",

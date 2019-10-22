@@ -1,4 +1,4 @@
-bgdbserver sys:hello
+bgdbserver sys:hello /r /n
 
 ; Quits the emulator at the end of the program
 ;UAEquit
